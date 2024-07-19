@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <title>Restaurante | </title>
+    <style>
+        .boton {
+            margin-right: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .botones {
+
+            background-color: rgb(0, 0, 0);
+            padding: 20px 20px;
+            font-size: 16px;
+            text-align: center;
+
+
+
+        }
+
+        .botones :hover {
+            scale: 1.05;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo de restaurante de mariscos clasico azul mar y naranja (1).png" alt="" name="cuerpo">
+
+    </header>
+    <p>
+    <div class="botones">
+        <button class="boton" onclick="window.open('contactos.html');">Registrarse </button>
+        <button class="boton" onclick="window.open('ubicacion.html');">Ubicacion y
+            Contactos</button>
+        <button class="boton" onclick="window.open('hisotira.html');">Historia</button>
+    </div>
+
+    </p>
+
+
+
+
+
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Arroz Chaufa de Mariscos</span>
+                <img src="img/arroz chaufa de mariscos.jpg" alt="" class="img-item">
+                <span class="precio-item">$14</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Arroz con Mariscos</span>
+                <img src="img/arroz con mariscos.webp" alt="" class="img-item">
+                <span class="precio-item">$16</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Ceviche</span>
+                <img src="img/Ceviche.jpg" alt="" class="img-item">
+                <span class="precio-item">$19</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Chicharron de Pota</span>
+                <img src="img/chicharron de pota.jpg" alt="" class="img-item">
+                <span class="precio-item">$18</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Chilcano de Pescado</span>
+                <img src="img/chilcano de pescado.jpg" alt="" class="img-item">
+                <span class="precio-item">$10</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Leche de Tigre</span>
+                <img src="img/leche de tigre.jpg" alt="" class="img-item">
+                <span class="precio-item">$13</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Parihuela</span>
+                <img src="img/parihuela.jpg" alt="" class="img-item">
+                <span class="precio-item">$17</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Sudado</span>
+                <img src="img/sudado.jpg" alt="" class="img-item">
+                <span class="precio-item">$17</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Trucha Frita</span>
+                <img src="img/Trucha frita.jpg" alt="" class="img-item">
+                <span class="precio-item">$12</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

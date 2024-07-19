@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+
+            background-image: url('img/WhatsApp Image 2024-07-12 at 9.55.33 AM (3).jpeg');
+            background-size: cover;
+            /* Hace que la imagen cubra todo el fondo */
+            background-repeat: no-repeat;
+            /* Evita que la imagen se repita */
+            background-position: center;
+            /* Centra la imagen en la pantalla */
+            height: 5vh;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <style>
+        h1 {
+            color: rgb(5, 5, 22);
+            font-family: Arial, Helvetica, sans-serif sans-serif;
+        }
+
+
+        body {
+            display: flex;
+            display: table;
+            border-spacing: 10px;
+            border: rgba(24, 25, 27, 0.993) 2px solid;
+            margin-left: 400px;
+            margin-top: 150px;
+            background-color: rgba(57, 112, 212, 0.5);
+            font-size: 15px;
+            border-radius: 10px;
+
+        }
+
+        div {
+            float: left;
+            text-transform: initial;
+            height: 40px;
+        }
+
+        input {
+            float: right;
+
+            border-radius: 25px;
+            color: rgb(16, 16, 17);
+
+            font-size: 16px;
+
+            text-transform: initial;
+            height: 30px;
+            margin-top: -4px;
+            /* Ajusta este valor para bajar el cuadro de entrada */
+            margin-right: 10px;
+            /* Ajusta este valor para separar el cuadro del borde derecho */
+            padding: 5px;
+            /* Ajusta este valor para separar el texto del borde del cuadro */
+        }
+    </style>
+    <h1>
+        <center>INGRESE TUS DATOS</center>
+    </h1>
+    <form>
+
+        <label>NOMBRE:</label>
+        <input type="text" id="nombre"><br><br>
+        <br>
+        <label>CORREO ELECTRONICO:</label>
+        <input type="text" id="correo"><br><br>
+        <br>
+        <label>DISTRITO DE PROCEDENCIA:</label>
+        <input type="text" id="distrito"><br><br>
+        <br>
+        <label>TELEFONO:</label>
+        <input type="text" id="telefono"><br><br>
+        <input type="button" value="Limpiar" onclick="Limpiar()">
+        <div>
+            <input type="button" value="enviar" onclick="Enviar()"><br>
+        </div>
+        <script>
+            function Limpiar() {
+                document.getElementById('nombre').value = '';
+                document.getElementById('correo').value = '';
+                document.getElementById('distrito').value = '';
+                document.getElementById('telefono').value = '';
+                document.getElementById('nombre').focus();
+            }
+            function Enviar() {
+                document.getElementById('nombre').value = '';
+                document.getElementById('correo').value = '';
+                document.getElementById('distrito').value = '';
+                document.getElementById('telefono').value = '';
+                document.getElementById('nombre').focus();
+                alert("Solicitud Enviada");
+            }
+        </script>
+    </form>
+</body>
+
+</html>
